@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     height: 100%;
-    
+    min-height: 500px;
     /* font-family: Georgia, serif; */
     font-family: Arial, Helvetica, sans-serif;
     -webkit-user-select: none;
