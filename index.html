@@ -1,9 +1,9 @@
 <html>
   <head>
     <title>Web Editor</title>
-    <link rel="shortcut icon" href="resources/favicon.ico">
-    <link defer rel="stylesheet" type="text/css" href="styles/loading-bar.min.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">    
+    <link rel="shortcut icon" href="static/resources/favicon.ico">
+    <link defer rel="stylesheet" type="text/css" href="static/styles/loading-bar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css">    
 
   </head>
   <body>
@@ -48,7 +48,7 @@
           </div>
           <div class="resources-placeholder">
             <div class="resources-placeholder-container">
-              <img class="resources-placeholder-image" src='resources/emptyIcon.png' />
+              <img class="resources-placeholder-image" src='static/resources/emptyIcon.png' />
               <figcaption class="resources-placeholder-caption">You have no resources currently, add them by using the 
                 <svg class="icon icon-tabler icon-tabler-upload" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#222222" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -207,12 +207,12 @@
           <div class="default-modal-content-before-download">
             <span id="modal-title">ffmpeg is still loading</span>
             <p>Start editing your video and come back in a few seconds to export</p>
-            <img class="modal-placeholder-img" src="resources/loadingFFmpeg.png" />
+            <img class="modal-placeholder-img" src="static/resources/loadingFFmpeg.png" />
           </div>
           <div class="default-modal-content" style="display: none">
             <span id="modal-title">Ready to start rendering</span>
             <p>Have at least one video dragged on the timeline</p>
-            <img class="modal-placeholder-img" src="resources/beginRender2.png" />
+            <img class="modal-placeholder-img" src="static/resources/beginRender2.png" />
           </div>
           <div class="loading-wrapper">
             <div id="progress-bar" 
@@ -233,20 +233,20 @@
     <div id="small-screen-placeholder-wrapper" style="display: none;">
       <div id="small-screen-placeholder">
         <h1>Oops...</h1>
-        <img id="small-screen-placeholder-image" src="resources/loadingFFmpeg.png">
+        <img id="small-screen-placeholder-image" src="static/resources/loadingFFmpeg.png">
         <p id="small-screen-placeholder-message"></p>
       </div>
     </div>
-    <script src="scripts/jquery-1.12.4.min.js"></script>
-    <script src="scripts/jquery-ui.min.js"></script>
-    <script defer src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="static/scripts/jquery-1.12.4.min.js"></script>
+    <script src="static/scripts/jquery-ui.min.js"></script>
+    <script defer src="static/scripts/jquery.ui.touch-punch.min.js"></script>
 
-    <script async src="scripts/helper.js"></script>
-    <script async src="scripts/videoHandler.js"></script>
-    <script async src="scripts/script.js"></script>
+    <script async src="static/scripts/helper.js"></script>
+    <script async src="static/scripts/videoHandler.js"></script>
+    <script async src="static/scripts/script.js"></script>
     
-    <script defer src="scripts/ffmpeg.min.js"></script>
-    <script defer src="scripts/videoTranscode.js"></script>
-    <script defer type="text/javascript" src="scripts/loading-bar.min.js"></script>
+    <script defer src="static/scripts/ffmpeg.min.js"></script>
+    <script defer src="static/scripts/videoTranscode.js"></script>
+    <script defer type="text/javascript" src="static/scripts/loading-bar.min.js"></script>
   </body>
 </html>

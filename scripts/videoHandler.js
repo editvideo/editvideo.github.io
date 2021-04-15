@@ -160,7 +160,27 @@ window.onload = () => {
 
   const startupWrapper = document.querySelector('.startup-wrapper')
   const workspace = document.querySelector('.edit-workspace')
-  
+
+  workspace.addEventListener('dragover', function(e) {
+    e.preventDefault()
+    e.stopPropagation()
+    resourcesPlaceholder.style.transform = 'scale(0.8)'
+  }, false)
+  workspace.addEventListener('dragenter', function(e)  {
+    e.preventDefault()
+    e.stopPropagation()
+  }, false)
+  workspace.addEventListener('dragleave', function(e)  {
+    e.preventDefault()
+    e.stopPropagation()
+    resourcesPlaceholder.style.transform = 'none'
+  }, false)
+  workspace.addEventListener('drop', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    dropUpload(e.dataTransfer.files)
+  }, false)
+
   setTimeout(() => {
     workspace.style.display = 'flex'
     startupWrapper.children[0].style.animation = 'disappear 0.5s'
