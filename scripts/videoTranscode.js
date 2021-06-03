@@ -201,7 +201,7 @@ function render() {
       elm.innerText = 'Render new'
       downloadHref.style.display = 'block';
       downloadHref.href = imageUrl
-      downloadHref.download = 'sample.mp4'
+      downloadHref.download = document.querySelector('.preview-input-title').value
       
       delete ffmpeg;
     }
