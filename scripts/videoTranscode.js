@@ -7,9 +7,9 @@ $(document).ready(() => {
 
 function render() {
   const { createFFmpeg, fetchFile } = FFmpeg
-  const ffmpeg = createFFmpeg({ log: false })
+  const ffmpeg = createFFmpeg({ log: false, corePath: '/dist/ffmpeg-core.js', })
   
-  ffmpeg.load((_) => {
+  ffmpeg.load(() => {
     let currentPart = 1
     let totalParts = 0
     let fractionPart = 0
